@@ -1,5 +1,6 @@
 click==7.1.2
 fastapi==0.61.2
+gunicorn==20.0.4
 h11==0.11.0
 joblib==0.17.0
 nltk==3.5
