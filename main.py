@@ -39,7 +39,8 @@ def predict(parameters: PredictRequest):
 
     x = [text]
     y = models["complement"]["tfidf"].predict(x)
-    print(y)
+    y = True if y == 'positive' else False
 
     response = {"output": "positive" if y else "negative"}
+
     return response
